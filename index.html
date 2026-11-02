@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17152d"><title>ToonStory AI</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="top"><div class="brand"><span class="logo">✦</span><span>ToonStory <b>AI</b></span></div><span class="tag">STORY → ANIMATION</span></header>
+  <main>
+    <section class="hero">
+      <div class="eyebrow">YOUR STORY, YOUR ANIMATED WORLD</div>
+      <h1>अपनी कहानी को <span>कार्टून वीडियो</span> बनाइए</h1>
+      <p>कहानी लिखिए, वीडियो का अंदाज़ चुनिए और अपना वीडियो प्रोजेक्ट तैयार कीजिए।</p>
+    </section>
+    <section class="panel">
+      <label for="story">आपकी कहानी</label>
+      <textarea id="story" placeholder="उदाहरण: एक छोटे से गाँव में मीरा नाम की लड़की रहती थी। एक रात आसमान से चमकता हुआ तारा नीचे आया..."></textarea>
+      <div class="row">
+        <div class="field"><label for="language">वीडियो की भाषा</label><select id="language"><option>हिंदी</option><option>English</option></select></div>
+        <div class="field"><label for="style">वीडियो स्टाइल</label><select id="style"><option>3D कार्टून / Fantasy</option><option>3D Pixar-जैसा पारिवारिक एनीमेशन</option><option>2D कार्टून</option><option>Anime</option></select></div>
+      </div>
+      <div class="row">
+        <div class="field"><label for="ratio">वीडियो आकार</label><select id="ratio"><option value="16:9">YouTube — 16:9</option><option value="9:16">Reels / Shorts — 9:16</option><option value="1:1">Square — 1:1</option></select></div>
+        <div class="field"><label for="duration">लंबाई</label><select id="duration"><option>30 सेकंड</option><option>1 मिनट</option><option>2 मिनट</option><option>5 मिनट</option></select></div>
+      </div>
+      <button id="make">✦ वीडियो प्रोजेक्ट तैयार करें</button>
+      <p class="hint">ध्यान दें: असली AI वीडियो रेंडर करने के लिए वीडियो-जेनरेशन सेवा की API और उसकी अनुमति/की की जरूरत होगी।</p>
+    </section>
+    <section id="result" class="panel result" hidden>
+      <div class="result-head"><h2>आपका वीडियो प्रॉम्प्ट तैयार है</h2><span class="status">PROJECT READY</span></div>
+      <p class="hint">इसे AI वीडियो सेवा में भेजकर वीडियो रेंडर किया जा सकता है।</p>
+      <pre id="prompt"></pre>
+      <button class="secondary" id="copy">प्रॉम्प्ट कॉपी करें</button>
+    </section>
+    <footer>ToonStory AI · शुरुआती प्रोटोटाइप · वीडियो रेंडरिंग API अभी जोड़नी बाकी है</footer>
+  </main>
+  <script src="/app.js"></script>
+</body></html>
